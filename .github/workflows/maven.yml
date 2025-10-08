@@ -49,8 +49,4 @@ jobs:
           git add -A
           git status
           git commit -m "Exécution automatique de Maven" || echo "Aucun changement à valider"
-
-          # Push sécurisé via token GitHub
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:main
- "exécution de maven"
-        git push
+          git push
